@@ -29,10 +29,10 @@ def load_documents():
     return documents
 
 
-def chunk_documents(documents):
+def chunk_documents(documents, chunk_size=None, chunk_overlap=None):
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=config.CHUNK_SIZE,
-        chunk_overlap=config.CHUNK_OVERLAP,
+        chunk_size=chunk_size if chunk_size is not None else config.CHUNK_SIZE,
+        chunk_overlap=chunk_overlap if chunk_overlap is not None else config.CHUNK_OVERLAP,
         separators=["\n\n", "\n", ". ", " ", ""],
     )
     chunks = splitter.split_documents(documents)
@@ -41,19 +41,20 @@ def chunk_documents(documents):
     return chunks
 
 
-def build_index(chunks):
+def build_index(chunks, collection_name=None, persist_dir=None):
     if not config.OPENAI_API_KEY:
         raise RuntimeError("OPENAI_API_KEY is not set. Add it to groundedrag/.env")
 
+    persist_dir = persist_dir or config.VECTORSTORE_DIR
     embeddings = OpenAIEmbeddings(
         model=config.EMBEDDING_MODEL, api_key=config.OPENAI_API_KEY
     )
     vectorstore = Chroma(
-        collection_name=config.COLLECTION_NAME,
+        collection_name=collection_name or config.COLLECTION_NAME,
         embedding_function=embeddings,
-        persist_directory=str(config.VECTORSTORE_DIR),
+        persist_directory=str(persist_dir),
     )
-    # Rebuild from scratch each run so re-ingesting after corpus changes is safe.
+    # Rebuild from scratch each run so re-ingesting after corpus/config changes is safe.
     existing_ids = vectorstore.get()["ids"]
     if existing_ids:
         vectorstore.delete(ids=existing_ids)
@@ -67,18 +68,24 @@ def build_index(chunks):
     return vectorstore
 
 
-def main():
-    print(f"Loading PDFs from {config.RAW_DATA_DIR} ...")
+def run_ingest(chunk_size=None, chunk_overlap=None, collection_name=None, persist_dir=None):
+    """Full pipeline, parameterized so eval/ can build comparison-variant
+    indexes (different chunk_size/overlap) alongside the production index."""
     documents = load_documents()
     print(f"Loaded {len(documents)} pages total.")
 
-    print("Chunking ...")
-    chunks = chunk_documents(documents)
-    print(f"Produced {len(chunks)} chunks (size={config.CHUNK_SIZE}, overlap={config.CHUNK_OVERLAP}).")
+    chunks = chunk_documents(documents, chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+    effective_size = chunk_size if chunk_size is not None else config.CHUNK_SIZE
+    effective_overlap = chunk_overlap if chunk_overlap is not None else config.CHUNK_OVERLAP
+    print(f"Produced {len(chunks)} chunks (size={effective_size}, overlap={effective_overlap}).")
 
-    print("Embedding + indexing into Chroma ...")
-    build_index(chunks)
-    print(f"Done. Index persisted to {config.VECTORSTORE_DIR}")
+    build_index(chunks, collection_name=collection_name, persist_dir=persist_dir)
+    print(f"Done. Index persisted to {persist_dir or config.VECTORSTORE_DIR}")
+
+
+def main():
+    print(f"Loading PDFs from {config.RAW_DATA_DIR} ...")
+    run_ingest()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+{
+  "n_grounded": 35,
+  "n_unanswerable": 8,
+  "n_errors": 0,
+  "recall_at_k": 0.9142857142857143,
+  "mrr": 0.7904761904761906,
+  "mean_faithfulness": 0.9522058823529411,
+  "hallucination_rate": 0.047794117647058876,
+  "mean_answer_relevance": 4.823529411764706,
+  "grounded_abstention_accuracy": 0.9714285714285714,
+  "unanswerable_abstention_accuracy": 1.0
+}

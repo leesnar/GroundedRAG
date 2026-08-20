@@ -1,0 +1,1793 @@
+[
+  {
+    "id": "g001",
+    "category": "grounded",
+    "question": "What should I do if I encounter a disease outbreak in my Nile tilapia farm?",
+    "answer": "If you encounter a disease outbreak in your Nile tilapia farm, you should take the following steps:\n\n1. Decrease feeding rates or cease feeding, as most farmers do during disease outbreaks [3].\n2. Check environmental conditions, including levels of ammonia, nitrite, nitrate, pH, and temperature, as these may be causing stress [2].\n3. If a significant percentage of fish are showing signs of disease, consider removing the infected fish immediately to prevent the spread of the disease [2].\n4. Inspect the removed fish carefully to determine the specific disease or cause [2].\n5. Place affected fish in a separate tank, known as a quarantine or hospital tank, for further observation [2].\n6. If necessary, use therapeutants such as florfenicol, which is added to feeds at a rate of 0.5 kg/tonne for a one-week period [3]. However, be aware that many medicinal herbs used are not formally licensed for use as veterinarian drugs [3].\n7. Report any observed signs of disease to an Extension Officer for further advice on controlling the disease [1]. \n\nAdditionally, remove and bury any dead fish as soon as you spot them [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 34
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 141
+      },
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 20
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.3333333333333333,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Decrease feeding rates or cease feeding during disease outbreaks.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Check environmental conditions, including levels of ammonia, nitrite, nitrate, pH, and temperature, as these may be causing stress.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "If a significant percentage of fish are showing signs of disease, consider removing the infected fish immediately to prevent the spread of the disease.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Inspect the removed fish carefully to determine the specific disease or cause.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Place affected fish in a separate tank, known as a quarantine or hospital tank, for further observation.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Use therapeutants such as florfenicol, which is added to feeds at a rate of 0.5 kg/tonne for a one-week period.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Many medicinal herbs used are not formally licensed for use as veterinarian drugs.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Report any observed signs of disease to an Extension Officer for further advice on controlling the disease.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Remove and bury any dead fish as soon as you spot them.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g002",
+    "category": "grounded",
+    "question": "What is the recommended stocking density for broodstock tilapia in ponds?",
+    "answer": "The recommended stocking density for broodstock tilapia in ponds is between 3,750 to 4,500 per hectare [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 3
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 9
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 156
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The recommended stocking density for broodstock tilapia in ponds is between 3,750 to 4,500 per hectare.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g003",
+    "category": "grounded",
+    "question": "What are the main provinces in China where Nile tilapia is produced?",
+    "answer": "The main provinces in China where Nile tilapia is produced are Guangdong, Hainan, Guangxi, and Fujian [1][2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 2
+      },
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 0
+      },
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 1
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.5,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The main provinces in China where Nile tilapia is produced are Guangdong, Hainan, Guangxi, and Fujian.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g004",
+    "category": "grounded",
+    "question": "What is the annual income from Nile tilapia for farm code D?",
+    "answer": "The annual income from Nile tilapia for farm code D is 95,588 US$ [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 23
+      },
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 21
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 271
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The annual income from Nile tilapia for farm code D is 95,588 US$",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g005",
+    "category": "grounded",
+    "question": "What are the typical sizes of earthen ponds used for tilapia aquaculture in southern China?",
+    "answer": "The typical sizes of earthen ponds used for tilapia aquaculture in southern China range between 0.33 ha to 3.3 ha [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 8
+      },
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 3
+      },
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 4
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The typical sizes of earthen ponds used for tilapia aquaculture in southern China range between 0.33 ha to 3.3 ha",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g006",
+    "category": "grounded",
+    "question": "What is the recommended feeding rate for most cultured fish at the grow-out stage?",
+    "answer": "The recommended feeding rate for most cultured fish at the grow-out stage is 1\u20132% of their total body weight per day [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 279
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 154
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 154
+      }
+    ],
+    "retrieval_hit": false,
+    "reciprocal_rank": 0.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The recommended feeding rate for most cultured fish at the grow-out stage is 1\u20132% of their total body weight per day.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g007",
+    "category": "grounded",
+    "question": "How does companion planting help reduce pest problems in aquaponics?",
+    "answer": "Companion planting helps reduce pest problems in aquaponics by utilizing the constructive relationships between different plants. Certain plants can produce natural chemicals that attract or repel specific insects, which can enhance the growth and yield of neighboring plants. This method can create a mechanical, repellent, or dissuasive effect against pests. Additionally, beneficial plants can release substances or root exudates that encourage a healthier agro-ecosystem, which can contribute to pest control. The effectiveness of companion planting in reducing pests depends on factors such as the level of pest infestation, crop density, and the specific planting times used [1][2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 118
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 207
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 115
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Companion planting helps reduce pest problems in aquaponics by utilizing the constructive relationships between different plants.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Certain plants can produce natural chemicals that attract or repel specific insects.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Companion planting can enhance the growth and yield of neighboring plants.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Companion planting creates a mechanical, repellent, or dissuasive effect against pests.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Beneficial plants can release substances or root exudates that encourage a healthier agro-ecosystem.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The effectiveness of companion planting in reducing pests depends on factors such as the level of pest infestation, crop density, and the specific planting times used.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g008",
+    "category": "grounded",
+    "question": "What size should the sump tank be for an ebb-and-flow media bed aquaponics system?",
+    "answer": "The sump tank should be large enough to hold at least the entire volume of water in the grow beds. It is recommended that the sump volume be at least 70 percent of the total media bed volume [1][3].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 74
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 76
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 79
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The sump tank should be large enough to hold at least the entire volume of water in the grow beds.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "It is recommended that the sump volume be at least 70 percent of the total media bed volume.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g009",
+    "category": "grounded",
+    "question": "What are the target ranges for pH and water temperature in an aquaponic system?",
+    "answer": "The target pH range in an aquaponic system is recommended to be slightly acidic, between 6 and 7 [2][3]. The general water temperature range is 18\u201330 \u00b0C [2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 45
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 43
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 112
+      }
+    ],
+    "retrieval_hit": false,
+    "reciprocal_rank": 0.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The target pH range in an aquaponic system is between 6 and 7.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The general water temperature range in an aquaponic system is 18\u201330 \u00b0C.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g010",
+    "category": "grounded",
+    "question": "What are the signs that my fish may be suffering from ammonia toxicity?",
+    "answer": "The signs that your fish may be suffering from ammonia toxicity include:\n\n1. Slight restlessness and increased respiration.\n2. Congregating close to the water surface.\n3. Gasping for air and increased restlessness with rapid movements.\n4. Irregular respiration and intense activity.\n5. Violent reactions to outside stimuli, such as losing balance and leaping out of the water.\n6. Muscle twitching in spasms.\n7. Lying on their side and spasmodically opening their mouths and gill opercula.\n8. A pale body surface and excessive mucus production.\n9. Small hemorrhages, mainly at the base of the pectoral fins and in the ocular cavity.\n10. Heavily congested gills with considerable mucus and possible bleeding of the gills [1][2][3].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 16
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 47
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 17
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.5,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The signs that your fish may be suffering from ammonia toxicity include slight restlessness and increased respiration.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The fish congregate close to the water surface.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The fish gasp for air and show increased restlessness with rapid movements.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The fish have irregular respiration and intense activity.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The fish react violently to outside stimuli, such as losing balance and leaping out of the water.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The fish experience muscle twitching in spasms.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The fish lie on their side and spasmodically open their mouths and gill opercula.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The body surface of the fish becomes pale and there is excessive mucus production.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "There are small hemorrhages, mainly at the base of the pectoral fins and in the ocular cavity.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The gills are heavily congested with considerable mucus and possible bleeding of the gills.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g011",
+    "category": "grounded",
+    "question": "How much water flow is needed for 1,200 litres per hour in rainbow trout farming?",
+    "answer": "To convert 1,200 litres per hour to litres per second, you divide by 3,600 (the number of seconds in an hour). \n\n1,200 litres/hour \u00f7 3,600 seconds/hour = 0.33 litres/second.\n\nAccording to the source, a rule of thumb is that about 10 litres/second of water source should be calculated for each 1 tonne of rainbow trout produced [2]. However, the specific water flow needed for 1,200 litres per hour is not directly provided in the sources. \n\nI don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 83
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 34
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 43
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": false,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  },
+  {
+    "id": "g012",
+    "category": "grounded",
+    "question": "What harmful gases can accumulate in the water of rearing tanks for rainbow trout?",
+    "answer": "The harmful gases that can accumulate in the water of rearing tanks for rainbow trout are carbon dioxide (CO2) and ammonia (NH3) [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 59
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 81
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 34
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The harmful gases that can accumulate in the water of rearing tanks for rainbow trout are carbon dioxide (CO2) and ammonia (NH3).",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g013",
+    "category": "grounded",
+    "question": "What are the important factors for water management in trout farming?",
+    "answer": "The important factors for water management in trout farming include:\n\n1. **Quality and Quantity of Water**: It is essential to check both the quality and the volume of available water. A rule of thumb is that about 10 litres/sec (600 litres/min) of water should be calculated for each 1 tonne of rainbow trout produced [1].\n\n2. **Temperature**: Cold surface and underground waters are suitable for trout farming. Surface water may have daily temperature fluctuations of 2\u20134 \u00b0C and seasonal changes of 5\u201315 \u00b0C, while underground water has minimal temperature differences [1].\n\n3. **Dissolved Oxygen**: Water should sustain high concentrations of dissolved oxygen to ensure smooth respiration for the trout [2].\n\n4. **Clean Water**: The water must be free of harmful solids and gaseous waste materials produced during metabolism and respiration [2].\n\n5. **Water Flow Velocity**: The velocity of water flow in troughs and tanks should be proportional to the size of the reared fish, with optimal velocities specified for different sizes of fish [3]. \n\n6. **Seasonal Variability**: The availability of water may change considerably with the seasons, especially for surface waters and springs, which can affect the production capacity of the trout farm [1]. \n\n7. **Flood Protection**: Farms should be designed to protect against floods based on the highest flood levels ever experienced [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 34
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 15
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 43
+      }
+    ],
+    "retrieval_hit": false,
+    "reciprocal_rank": 0.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "It is essential to check both the quality and the volume of available water.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "A rule of thumb is that about 10 litres/sec (600 litres/min) of water should be calculated for each 1 tonne of rainbow trout produced.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Cold surface and underground waters are suitable for trout farming.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Surface water may have daily temperature fluctuations of 2\u20134 \u00b0C and seasonal changes of 5\u201315 \u00b0C, while underground water has minimal temperature differences.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Water should sustain high concentrations of dissolved oxygen to ensure smooth respiration for the trout.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The water must be free of harmful solids and gaseous waste materials produced during metabolism and respiration.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The velocity of water flow in troughs and tanks should be proportional to the size of the reared fish.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Optimal velocities are specified for different sizes of fish.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The availability of water may change considerably with the seasons, especially for surface waters and springs, which can affect the production capacity of the trout farm.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Farms should be designed to protect against floods based on the highest flood levels ever experienced.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g014",
+    "category": "grounded",
+    "question": "What is the purpose of the technical paper on small-scale trout farming?",
+    "answer": "The purpose of the technical paper on small-scale trout farming is to guide the reader through the necessary technical information, related practical solutions, and the steps of preparation for both investment in and day-to-day operation of a small-scale rainbow trout farm. It aims to summarize all essential technical information important for small-scale trout production, including general information on efficient treatment of trout farm effluents, while also considering the need to protect mountainous regions where water resources could support profitable trout farming. Additionally, it includes a glossary and illustrations for easy understanding [1][2][3].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 5
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 91
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 0
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The purpose of the technical paper on small-scale trout farming is to guide the reader through the necessary technical information, related practical solutions, and the steps of preparation for both investment in and day-to-day operation of a small-scale rainbow trout farm.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The technical paper aims to summarize all essential technical information important for small-scale trout production.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The technical paper includes general information on efficient treatment of trout farm effluents.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The technical paper considers the need to protect mountainous regions where water resources could support profitable trout farming.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The technical paper includes a glossary and illustrations for easy understanding.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g015",
+    "category": "grounded",
+    "question": "What are the key water quality factors that affect the growth of rainbow trout?",
+    "answer": "The key water quality factors that affect the growth of rainbow trout include:\n\n1. **Temperature**: Rainbow trout are cold water fish, and the optimal temperature range for their growth is about 7\u201318 \u00b0C.\n2. **Dissolved Oxygen**: Water should sustain high concentrations of dissolved oxygen to ensure smooth respiration.\n3. **pH Levels**: The optimal pH range for developing embryos and fry is between 6.5 and 8, while older fish have wider acceptable pH ranges.\n4. **Clarity of Water**: Clear water is crucial for efficient feeding, as trout have keen eyesight.\n5. **Cleanliness of Water**: Water must be free of harmful solid and gaseous waste materials produced during metabolism and respiration [1][2][3].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 15
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 22
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 7
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Rainbow trout are cold water fish.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The optimal temperature range for their growth is about 7\u201318 \u00b0C.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Water should sustain high concentrations of dissolved oxygen to ensure smooth respiration.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The optimal pH range for developing embryos and fry is between 6.5 and 8.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Older fish have wider acceptable pH ranges.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Clear water is crucial for efficient feeding, as trout have keen eyesight.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Water must be free of harmful solid and gaseous waste materials produced during metabolism and respiration.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g016",
+    "category": "grounded",
+    "question": "What is the best harvest time to maximize profit in aquaculture?",
+    "answer": "The best harvest time to maximize profit in aquaculture occurs between the critical standing crop and carrying capacity, which is typically below the point of maximum yield [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 66
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 36
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 143
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The best harvest time to maximize profit in aquaculture occurs between the critical standing crop and carrying capacity.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The best harvest time to maximize profit is typically below the point of maximum yield.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g017",
+    "category": "grounded",
+    "question": "What are the key water management practices in intensive aquaculture farms?",
+    "answer": "Key water management practices in intensive aquaculture farms include:\n\n1. Complete drainage and harvest on demand of tanks, cages, and small earthen ponds [1].\n2. Constant management of dissolved oxygen and nitrogenous wastes [1].\n3. Use of water quality control methods such as sedimentation, mechanical and bio-filtration, disinfection, and aeration or pure oxygen supplementation [1].\n4. Regular water exchange, with the possibility of numerous exchanges of water volume per hour in some systems [1][2].\n5. Flushing of suspended and dissolved nitrogenous wastes from the culture unit [1]. \n\nThese practices are essential for maintaining water quality and supporting high-density fish farming.",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 72
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 71
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 139
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Complete drainage and harvest on demand of tanks, cages, and small earthen ponds",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Constant management of dissolved oxygen and nitrogenous wastes",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Use of water quality control methods such as sedimentation, mechanical and bio-filtration, disinfection, and aeration or pure oxygen supplementation",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Regular water exchange, with the possibility of numerous exchanges of water volume per hour in some systems",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Flushing of suspended and dissolved nitrogenous wastes from the culture unit",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g018",
+    "category": "grounded",
+    "question": "What are some signs of ineffective governance in aquaculture?",
+    "answer": "Some signs of ineffective governance in aquaculture include:\n\n- Over-regulation that deters investment and international competitiveness.\n- Conflicting regulations.\n- Multiple administrative layers to approve a licence.\n- Criteria for obtaining a licence unclear and left to official discretion.\n- Decisions made in ignorance of different contexts.\n- Lack of capacity and resources to monitor and enforce regulations.\n- Lack of support from communities and stakeholders [3].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 153
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 8
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 156
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.3333333333333333,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Over-regulation that deters investment and international competitiveness.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Conflicting regulations.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Multiple administrative layers to approve a licence.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Criteria for obtaining a licence unclear and left to official discretion.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Decisions made in ignorance of different contexts.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Lack of capacity and resources to monitor and enforce regulations.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Lack of support from communities and stakeholders.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g019",
+    "category": "grounded",
+    "question": "What are the key parts that should be included in an aquaculture business plan?",
+    "answer": "The key parts that should be included in an aquaculture business plan are:\n\n1. Title page\n2. Table of contents\n3. Executive summary\n4. Description of the proposed aquaculture business, which includes:\n   - Proposed aquaculture venture\n   - Site\n   - Production system\n   - Legal structure of the business\n   - Management capacity of the business [2][3].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 185
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 184
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 171
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.5,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The key parts that should be included in an aquaculture business plan are: Title page, Table of contents, Executive summary, Description of the proposed aquaculture business, Proposed aquaculture venture, Site, Production system, Legal structure of the business, Management capacity of the business",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g020",
+    "category": "grounded",
+    "question": "What do I need to start an aquaculture business?",
+    "answer": "To start an aquaculture business, you need the following prerequisites:\n\n1. A business sense.\n2. A business plan.\n3. Adequate resources and capital.\n\nAdditionally, you should identify:\n- What to produce (the aquaculture products and their form).\n- How much to produce (the target quantity).\n- How to produce (define the resources required and how to combine them for efficient production).\n- For whom to produce (the target markets).\n\nYou will also need to elaborate proper financial statements, as well as the marketing and business plans [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 171
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 7
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 185
+      }
+    ],
+    "retrieval_hit": false,
+    "reciprocal_rank": 0.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "To start an aquaculture business, you need a business sense.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "To start an aquaculture business, you need a business plan.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "To start an aquaculture business, you need adequate resources and capital.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "You should identify what to produce (the aquaculture products and their form).",
+        "verdict": "supported"
+      },
+      {
+        "claim": "You should identify how much to produce (the target quantity).",
+        "verdict": "supported"
+      },
+      {
+        "claim": "You should identify how to produce (define the resources required and how to combine them for efficient production).",
+        "verdict": "supported"
+      },
+      {
+        "claim": "You should identify for whom to produce (the target markets).",
+        "verdict": "supported"
+      },
+      {
+        "claim": "You will need to elaborate proper financial statements, as well as the marketing and business plans.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g021",
+    "category": "grounded",
+    "question": "What are the major feed ingredients that can be used in tilapia feed production in sub-Saharan Africa?",
+    "answer": "The major feed ingredients that can be used in tilapia feed production in sub-Saharan Africa include locally available animal and plant protein sources, such as oil seed cakes, shrimp head waste, fish silage, soybean meal, meat and bone meal, poultry by-product meal, and hydrolysed feather meal. Additionally, various seed meals like cottonseed cake, soybean cake, papaya seed meal, sesame cake, and sunflower seed cake are also utilized [1][2][3].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 22
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 17
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 21
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.5,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The major feed ingredients that can be used in tilapia feed production in sub-Saharan Africa include locally available animal and plant protein sources.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Oil seed cakes are used in tilapia feed production in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Shrimp head waste is used in tilapia feed production in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Fish silage is used in tilapia feed production in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Soybean meal is used in tilapia feed production in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Meat and bone meal is used in tilapia feed production in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Poultry by-product meal is used in tilapia feed production in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Hydrolysed feather meal is used in tilapia feed production in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Various seed meals like cottonseed cake, soybean cake, papaya seed meal, sesame cake, and sunflower seed cake are utilized in tilapia feed production in sub-Saharan Africa.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g022",
+    "category": "grounded",
+    "question": "What are the common practices for tilapia farming in small-scale, low input environments in sub-Saharan Africa?",
+    "answer": "Common practices for tilapia farming in small-scale, low input environments in sub-Saharan Africa include:\n\n1. Non-commercial, extensive culture, which is a small-scale, low input-low output activity practiced in earthen ponds.\n2. Farmers typically own between one and five ponds, with sizes ranging from less than 100 m\u00b2 to 1,000 m\u00b2.\n3. Family labor is generally used, as many small-scale farmers do not have the cash to hire external labor [1][2].\n4. Pond depths can range from less than 50 cm to over 1 m [2].\n5. Monoculture of tilapia (O. niloticus and Tilapia spp.) is commonly practiced, although polyculture with North African catfish (Clarias gariepinus) and common carp (Cyprinus carpio) is also seen in some countries [2].\n6. Non-commercial, rural/subsistence tilapia culture often relies on a fertilization system using a compost crib built inside the pond, which is filled with various inputs available on the farm (e.g., weeds, leaves, animal manure) to stimulate natural productivity in the pond [2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 6
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 6
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 10
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Non-commercial, extensive culture is a small-scale, low input-low output activity practiced in earthen ponds.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Farmers typically own between one and five ponds, with sizes ranging from less than 100 m\u00b2 to 1,000 m\u00b2.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Family labor is generally used, as many small-scale farmers do not have the cash to hire external labor.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Pond depths can range from less than 50 cm to over 1 m.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Monoculture of tilapia (O. niloticus and Tilapia spp.) is commonly practiced, although polyculture with North African catfish (Clarias gariepinus) and common carp (Cyprinus carpio) is also seen in some countries.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Non-commercial, rural/subsistence tilapia culture often relies on a fertilization system using a compost crib built inside the pond, which is filled with various inputs available on the farm (e.g., weeds, leaves, animal manure) to stimulate natural productivity in the pond.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g023",
+    "category": "grounded",
+    "question": "What are some locally available protein sources that can be used to replace fishmeal in tilapia feed in sub-Saharan Africa?",
+    "answer": "Some locally available protein sources that can be used to replace fishmeal in tilapia feed in sub-Saharan Africa include:\n\n1. Oil seed cakes\n2. Shrimp head waste\n3. Fish silage\n4. Poultry by-product meal\n5. Hydrolysed feather meal\n6. Jackbean meal (cooked in distilled water) [1][2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 22
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 26
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 21
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Oil seed cakes can be used to replace fishmeal in tilapia feed in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Shrimp head waste can be used to replace fishmeal in tilapia feed in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Fish silage can be used to replace fishmeal in tilapia feed in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Poultry by-product meal can be used to replace fishmeal in tilapia feed in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Hydrolysed feather meal can be used to replace fishmeal in tilapia feed in sub-Saharan Africa.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Jackbean meal (cooked in distilled water) can be used to replace fishmeal in tilapia feed in sub-Saharan Africa.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g024",
+    "category": "grounded",
+    "question": "What are the export quantities and prices of maize from Ghana and Kenya in 2010?",
+    "answer": "In 2010, the export quantity and price of maize from Ghana were 127,314 tonnes at US$1,346/tonne, and from Kenya, it was 7,841 tonnes at US$648/tonne [2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 17
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 20
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 19
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.5,
+    "abstention_correct": true,
+    "faithfulness": 0.75,
+    "answer_relevance": 4,
+    "claims": [
+      {
+        "claim": "The export quantity of maize from Ghana in 2010 was 127,314 tonnes.",
+        "verdict": "not_supported"
+      },
+      {
+        "claim": "The export price of maize from Ghana in 2010 was US$1,346/tonne.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The export quantity of maize from Kenya in 2010 was 7,841 tonnes.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The export price of maize from Kenya in 2010 was US$648/tonne.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g025",
+    "category": "grounded",
+    "question": "What are the main protein and energy sources for farm-made tilapia feeds in smallholder aquaculture?",
+    "answer": "The main protein sources for farm-made tilapia feeds include oilseed cakes (such as cotton, soybean, and sunflower), fishmeal, blood meal, carcass meal, brewer\u2019s waste, groundnut cake, palm kernel cake, and poultry by-product meal. The energy sources include cereal bran, corn, kitchen waste, and vegetables [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 13
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 0
+      },
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 14
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The main protein sources for farm-made tilapia feeds include oilseed cakes (such as cotton, soybean, and sunflower), fishmeal, blood meal, carcass meal, brewer\u2019s waste, groundnut cake, palm kernel cake, and poultry by-product meal.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The energy sources for farm-made tilapia feeds include cereal bran, corn, kitchen waste, and vegetables.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g026",
+    "category": "grounded",
+    "question": "What slope should I use for dikes if my soil has less than 20% clay?",
+    "answer": "If your soil has a low percentage of clay (20% or less), you should increase the dike slopes to 3:1 to prevent slumping and erosion of the pond banks [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 15
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 15
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 14
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "If your soil has a low percentage of clay (20% or less), you should increase the dike slopes to 3:1 to prevent slumping and erosion of the pond banks.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g027",
+    "category": "grounded",
+    "question": "How often should I sample my fish to check on their health and growth?",
+    "answer": "You should sample your fish one to two times a week to check on their health and growth [2]. Additionally, it is advisable to sample frequently, such as monthly, as well [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 30
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 144
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 45
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "You should sample your fish one to two times a week to check on their health and growth.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "It is advisable to sample frequently, such as monthly.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g028",
+    "category": "grounded",
+    "question": "What are some strategies to reduce risks in aquaculture?",
+    "answer": "Some strategies to reduce risks in aquaculture include:\n\n1. Diversification into other aquaculture systems (e.g., nursery polyculture, species switch) and agriculture operations (e.g., integration with vegetable, poultry, or rice).\n2. Aquaculture insurance (though not available in Ghana presently).\n3. Improvement in production technology and practices.\n4. Financial planning (improving cash flow).\n5. Contract pricing (reducing cost).\n6. Equipment back-up (pumps, aerators).\n7. Management (improved practices).\n8. Education/training (improved skills).\n9. Adherence to regulatory requirements [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 43
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 195
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 137
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Diversification into other aquaculture systems (e.g., nursery polyculture, species switch) and agriculture operations (e.g., integration with vegetable, poultry, or rice) is a strategy to reduce risks in aquaculture.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Aquaculture insurance is a strategy to reduce risks in aquaculture, though it is not available in Ghana presently.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Improvement in production technology and practices is a strategy to reduce risks in aquaculture.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Financial planning (improving cash flow) is a strategy to reduce risks in aquaculture.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Contract pricing (reducing cost) is a strategy to reduce risks in aquaculture.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Equipment back-up (pumps, aerators) is a strategy to reduce risks in aquaculture.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Management (improved practices) is a strategy to reduce risks in aquaculture.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Education/training (improved skills) is a strategy to reduce risks in aquaculture.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Adherence to regulatory requirements is a strategy to reduce risks in aquaculture.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g029",
+    "category": "grounded",
+    "question": "What should be the minimum height difference between the drainage canal and the pond bottom for gravity flow?",
+    "answer": "The minimum height difference between the drainage canal and the pond bottom for gravity flow should be at least 30 cm (11.8 inches) [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 19
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 107
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 116
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The minimum height difference between the drainage canal and the pond bottom for gravity flow should be at least 30 cm (11.8 inches).",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g030",
+    "category": "grounded",
+    "question": "What are some key elements that contribute to a successful tilapia pond aquaculture business operation?",
+    "answer": "Key elements that contribute to a successful tilapia pond aquaculture business operation include:\n\n1. Site selection and preparation\n2. Pond design and construction\n3. Farming practices (pond preparation, stocking, and feeding)\n4. Biosecurity and fish health management\n5. Harvesting and marketing\n6. Recordkeeping\n\nThese elements are critical for the operation of a tilapia pond aquaculture business [2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 41
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 1
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 84
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.5,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Site selection and preparation are key elements for a successful tilapia pond aquaculture business operation.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Pond design and construction are key elements for a successful tilapia pond aquaculture business operation.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Farming practices (pond preparation, stocking, and feeding) are key elements for a successful tilapia pond aquaculture business operation.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Biosecurity and fish health management are key elements for a successful tilapia pond aquaculture business operation.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Harvesting and marketing are key elements for a successful tilapia pond aquaculture business operation.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Recordkeeping is a key element for a successful tilapia pond aquaculture business operation.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g031",
+    "category": "grounded",
+    "question": "How does the chloride content in water affect nitrite toxicity in fish?",
+    "answer": "The chloride content in water significantly affects nitrite toxicity in fish. The 96-hour LC50 for rainbow trout varies depending on the chloride content of the dilution water, with values ranging from 0.24 to 12.20 mg per litre. The effect of chloride on nitrite toxicity is so pronounced that tests conducted without recording the chloride concentrations cannot be compared with those of other tests. Additionally, the chloride cells in the fish gills cannot distinguish between nitrite and chloride ions, meaning both are transported across the gill epithelium, and the rate of nitrite uptake depends on the nitrite-chloride ratio in the water [2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 21
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 20
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 19
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 0.5,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "The chloride content in water significantly affects nitrite toxicity in fish.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The 96-hour LC50 for rainbow trout varies depending on the chloride content of the dilution water, with values ranging from 0.24 to 12.20 mg per litre.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The effect of chloride on nitrite toxicity is so pronounced that tests conducted without recording the chloride concentrations cannot be compared with those of other tests.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The chloride cells in the fish gills cannot distinguish between nitrite and chloride ions.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Both nitrite and chloride ions are transported across the gill epithelium.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The rate of nitrite uptake depends on the nitrite-chloride ratio in the water.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g032",
+    "category": "grounded",
+    "question": "How does pollution affect the immune response of fish?",
+    "answer": "Pollution can adversely affect the immune response of fish by reducing their ability to maintain an effective immunological response system. This can lead to increased susceptibility to various diseases. For instance, acute and/or chronic pollution of surface waters can cause a significant decrease in the levels of total proteins, globulins, and lysozymes in the blood plasma of fish, such as carp. Additionally, there can be a decrease in the number of leucocytes, which are crucial for immune function [2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 55
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 55
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 59
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Pollution can adversely affect the immune response of fish by reducing their ability to maintain an effective immunological response system.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "This can lead to increased susceptibility to various diseases.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Acute and/or chronic pollution of surface waters can cause a significant decrease in the levels of total proteins, globulins, and lysozymes in the blood plasma of fish, such as carp.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "There can be a decrease in the number of leucocytes, which are crucial for immune function.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g033",
+    "category": "grounded",
+    "question": "How can I collect periphyton samples from underwater surfaces for water quality analysis?",
+    "answer": "You can collect periphyton samples from underwater surfaces using the following methods:\n\n1. Use a pair of long tweezers to remove periphyton from different submerged surfaces.\n2. For water of greater depths, a scraper attached to a long handle can be helpful.\n3. If the periphyton is attached to underwater structures made of concrete or other materials, you can scrape it off using a stiff brush (like one used for washing laboratory glassware) attached to a long pole. The material collected on the bristles of the brush can then be transferred into a sampling phial using tweezers [1][2].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 44
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 44
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 43
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "You can collect periphyton samples from underwater surfaces using a pair of long tweezers.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "For water of greater depths, a scraper attached to a long handle can be helpful.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "If the periphyton is attached to underwater structures made of concrete or other materials, you can scrape it off using a stiff brush attached to a long pole.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The material collected on the bristles of the brush can then be transferred into a sampling phial using tweezers.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g034",
+    "category": "grounded",
+    "question": "Which herbicides are less toxic to fish, and what is their toxicity level?",
+    "answer": "Diazine-based herbicidal preparations are less toxic to fish than triazine-based preparations, with a toxicity level (48h LC50) ranging from 100 to 10,000 mg per litre, which is classified as low to very low toxicity to fish [1].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 35
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 33
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 34
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Diazine-based herbicidal preparations are less toxic to fish than triazine-based preparations.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The toxicity level (48h LC50) of diazine-based herbicides ranges from 100 to 10,000 mg per litre.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Diazine-based herbicides are classified as low to very low toxicity to fish.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "g035",
+    "category": "grounded",
+    "question": "What happens to fish when they are exposed to high levels of nitrite in the water?",
+    "answer": "When fish are exposed to high levels of nitrite in the water, it can lead to several health issues. Nitrite is toxic to fish, and problems can arise with concentrations as low as 0.25 mg/litre. High levels can cause rapid fish deaths, and even low levels over an extended period can result in increased fish stress, disease, and death. The toxic effects prevent the transport of oxygen within the bloodstream, causing the blood to turn a chocolate-brown color, which is sometimes referred to as \"brown blood disease.\" Affected fish may exhibit symptoms similar to ammonia poisoning, such as gasping at the surface even in water with a high concentration of dissolved oxygen [2]. If the amount of methaemoglobin in the blood exceeds 50% of the total hemoglobin, the fish usually survive, but higher levels (70-80%) can lead to torpidity, loss of orientation, and inability to react to stimuli [1]. Long exposure to sublethal concentrations may slightly depress growth but does not cause serious damage [3].",
+    "abstained": false,
+    "retrieved": [
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 19
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 47
+      },
+      {
+        "source": "fao_water_quality_fish_health.pdf",
+        "page": 21
+      }
+    ],
+    "retrieval_hit": true,
+    "reciprocal_rank": 1.0,
+    "abstention_correct": true,
+    "faithfulness": 1.0,
+    "answer_relevance": 5,
+    "claims": [
+      {
+        "claim": "Nitrite is toxic to fish.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Problems can arise with nitrite concentrations as low as 0.25 mg/litre.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "High levels of nitrite can cause rapid fish deaths.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Even low levels of nitrite over an extended period can result in increased fish stress, disease, and death.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The toxic effects of nitrite prevent the transport of oxygen within the bloodstream of fish.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "The blood of affected fish can turn a chocolate-brown color, referred to as 'brown blood disease.'",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Affected fish may exhibit symptoms similar to ammonia poisoning, such as gasping at the surface even in water with a high concentration of dissolved oxygen.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "If the amount of methaemoglobin in the blood exceeds 50% of the total hemoglobin, the fish usually survive.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Higher levels of methaemoglobin (70-80%) can lead to torpidity, loss of orientation, and inability to react to stimuli.",
+        "verdict": "supported"
+      },
+      {
+        "claim": "Long exposure to sublethal concentrations of nitrite may slightly depress growth but does not cause serious damage.",
+        "verdict": "supported"
+      }
+    ]
+  },
+  {
+    "id": "u001",
+    "category": "unanswerable",
+    "question": "What is the current interest rate policy of Indonesia's central bank?",
+    "answer": "I don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 175
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 269
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 175
+      }
+    ],
+    "abstention_correct": true,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  },
+  {
+    "id": "u002",
+    "category": "unanswerable",
+    "question": "How do I set up a REST API using FastAPI and deploy it on AWS?",
+    "answer": "I don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 230
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 253
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 0
+      }
+    ],
+    "abstention_correct": true,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  },
+  {
+    "id": "u003",
+    "category": "unanswerable",
+    "question": "What are Indonesia's tax filing deadlines for small businesses in 2026?",
+    "answer": "I don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 269
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 24
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 41
+      }
+    ],
+    "abstention_correct": true,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  },
+  {
+    "id": "u004",
+    "category": "unanswerable",
+    "question": "What is the current USD to Indonesian Rupiah exchange rate?",
+    "answer": "I don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_onfarm_feed_management_tilapia.pdf",
+        "page": 2
+      },
+      {
+        "source": "fao_smallscale_rainbow_trout.pdf",
+        "page": 84
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 40
+      }
+    ],
+    "abstention_correct": true,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  },
+  {
+    "id": "u005",
+    "category": "unanswerable",
+    "question": "How does mangrove forest photosynthesis differ from terrestrial trees?",
+    "answer": "I don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 44
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 108
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 108
+      }
+    ],
+    "abstention_correct": true,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  },
+  {
+    "id": "u006",
+    "category": "unanswerable",
+    "question": "What visa do I need to work as a foreigner in Indonesia?",
+    "answer": "I don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 274
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 175
+      },
+      {
+        "source": "fao_tilapia_pond_farming_ghana.pdf",
+        "page": 8
+      }
+    ],
+    "abstention_correct": true,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  },
+  {
+    "id": "u007",
+    "category": "unanswerable",
+    "question": "What's the difference between a k-nearest-neighbors and a random forest classifier?",
+    "answer": "I don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 106
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 104
+      },
+      {
+        "source": "fao_tilapia_feed_management_africa.pdf",
+        "page": 11
+      }
+    ],
+    "abstention_correct": true,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  },
+  {
+    "id": "u008",
+    "category": "unanswerable",
+    "question": "What are the safety regulations for offshore oil drilling in the Java Sea?",
+    "answer": "I don't have enough information in my sources to answer that.",
+    "abstained": true,
+    "retrieved": [
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 231
+      },
+      {
+        "source": "fao_smallscale_aquaponics.pdf",
+        "page": 158
+      },
+      {
+        "source": "fao_sustainable_aquaculture_training.pdf",
+        "page": 282
+      }
+    ],
+    "abstention_correct": true,
+    "faithfulness": null,
+    "answer_relevance": null,
+    "claims": []
+  }
+]

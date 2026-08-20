@@ -25,20 +25,26 @@ Sources:
 """
 
 
-def load_vectorstore():
+def load_vectorstore(collection_name: str = None, persist_dir=None):
+    """Load a Chroma vectorstore. Defaults to the main production index;
+    eval code passes collection_name/persist_dir to load a variant index
+    (e.g. a differently-chunked baseline) for comparison."""
     if not config.OPENAI_API_KEY:
         raise RuntimeError("OPENAI_API_KEY is not set. Add it to groundedrag/.env")
-    if not config.VECTORSTORE_DIR.exists():
+
+    collection_name = collection_name or config.COLLECTION_NAME
+    persist_dir = persist_dir or config.VECTORSTORE_DIR
+    if not persist_dir.exists():
         raise FileNotFoundError(
-            f"No index found at {config.VECTORSTORE_DIR}. Run `python src/ingest.py` first."
+            f"No index found at {persist_dir}. Run `python src/ingest.py` first."
         )
     embeddings = OpenAIEmbeddings(
         model=config.EMBEDDING_MODEL, api_key=config.OPENAI_API_KEY
     )
     return Chroma(
-        collection_name=config.COLLECTION_NAME,
+        collection_name=collection_name,
         embedding_function=embeddings,
-        persist_directory=str(config.VECTORSTORE_DIR),
+        persist_directory=str(persist_dir),
     )
 
 
@@ -49,6 +55,21 @@ def format_context(docs):
         page = doc.metadata.get("page", "?")
         lines.append(f"[{i}] (source: {source}, page: {page})\n{doc.page_content}")
     return "\n\n".join(lines)
+
+
+def generate_answer(question: str, docs, llm=None):
+    """Pure retrieve->generate step (no printing): given already-retrieved
+    docs, produce the cited answer text. Reused by the CLI and by eval/."""
+    llm = llm or ChatOpenAI(
+        model=config.GENERATION_MODEL, api_key=config.OPENAI_API_KEY, temperature=0
+    )
+    context = format_context(docs)
+    messages = [
+        ("system", SYSTEM_PROMPT.format(context=context)),
+        ("human", question),
+    ]
+    response = llm.invoke(messages)
+    return response.content
 
 
 def answer(question: str, k: int = config.RETRIEVAL_K, show_chunks: bool = True):
@@ -63,18 +84,10 @@ def answer(question: str, k: int = config.RETRIEVAL_K, show_chunks: bool = True)
             preview = doc.page_content[:150].replace("\n", " ")
             print(f"[{i}] {source} (page {page}): {preview}...")
 
-    context = format_context(docs)
-    llm = ChatOpenAI(
-        model=config.GENERATION_MODEL, api_key=config.OPENAI_API_KEY, temperature=0
-    )
-    messages = [
-        ("system", SYSTEM_PROMPT.format(context=context)),
-        ("human", question),
-    ]
-    response = llm.invoke(messages)
+    answer_text = generate_answer(question, docs)
 
     print("\n--- Answer ---")
-    print(response.content)
+    print(answer_text)
 
     print("\n--- Citation key ---")
     for i, doc in enumerate(docs, start=1):
@@ -82,7 +95,7 @@ def answer(question: str, k: int = config.RETRIEVAL_K, show_chunks: bool = True)
         page = doc.metadata.get("page", "?")
         print(f"[{i}] {source}, page {page}")
 
-    return response.content, docs
+    return answer_text, docs
 
 
 def main():

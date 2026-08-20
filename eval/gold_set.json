@@ -1,0 +1,303 @@
+[
+  {
+    "id": "g001",
+    "question": "What should I do if I encounter a disease outbreak in my Nile tilapia farm?",
+    "category": "grounded",
+    "expected_source": "fao_onfarm_feed_management_tilapia.pdf",
+    "expected_page": 20
+  },
+  {
+    "id": "g002",
+    "question": "What is the recommended stocking density for broodstock tilapia in ponds?",
+    "category": "grounded",
+    "expected_source": "fao_onfarm_feed_management_tilapia.pdf",
+    "expected_page": 3
+  },
+  {
+    "id": "g003",
+    "question": "What are the main provinces in China where Nile tilapia is produced?",
+    "category": "grounded",
+    "expected_source": "fao_onfarm_feed_management_tilapia.pdf",
+    "expected_page": 0
+  },
+  {
+    "id": "g004",
+    "question": "What is the annual income from Nile tilapia for farm code D?",
+    "category": "grounded",
+    "expected_source": "fao_onfarm_feed_management_tilapia.pdf",
+    "expected_page": 23
+  },
+  {
+    "id": "g005",
+    "question": "What are the typical sizes of earthen ponds used for tilapia aquaculture in southern China?",
+    "category": "grounded",
+    "expected_source": "fao_onfarm_feed_management_tilapia.pdf",
+    "expected_page": 8
+  },
+  {
+    "id": "g006",
+    "question": "What is the recommended feeding rate for most cultured fish at the grow-out stage?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_aquaponics.pdf",
+    "expected_page": 129
+  },
+  {
+    "id": "g007",
+    "question": "How does companion planting help reduce pest problems in aquaponics?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_aquaponics.pdf",
+    "expected_page": 118
+  },
+  {
+    "id": "g008",
+    "question": "What size should the sump tank be for an ebb-and-flow media bed aquaponics system?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_aquaponics.pdf",
+    "expected_page": 74
+  },
+  {
+    "id": "g009",
+    "question": "What are the target ranges for pH and water temperature in an aquaponic system?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_aquaponics.pdf",
+    "expected_page": 55
+  },
+  {
+    "id": "g010",
+    "question": "What are the signs that my fish may be suffering from ammonia toxicity?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_aquaponics.pdf",
+    "expected_page": 47
+  },
+  {
+    "id": "g011",
+    "question": "How much water flow is needed for 1,200 litres per hour in rainbow trout farming?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_rainbow_trout.pdf",
+    "expected_page": 83
+  },
+  {
+    "id": "g012",
+    "question": "What harmful gases can accumulate in the water of rearing tanks for rainbow trout?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_rainbow_trout.pdf",
+    "expected_page": 59
+  },
+  {
+    "id": "g013",
+    "question": "What are the important factors for water management in trout farming?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_rainbow_trout.pdf",
+    "expected_page": 6
+  },
+  {
+    "id": "g014",
+    "question": "What is the purpose of the technical paper on small-scale trout farming?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_rainbow_trout.pdf",
+    "expected_page": 5
+  },
+  {
+    "id": "g015",
+    "question": "What are the key water quality factors that affect the growth of rainbow trout?",
+    "category": "grounded",
+    "expected_source": "fao_smallscale_rainbow_trout.pdf",
+    "expected_page": 15
+  },
+  {
+    "id": "g016",
+    "question": "What is the best harvest time to maximize profit in aquaculture?",
+    "category": "grounded",
+    "expected_source": "fao_sustainable_aquaculture_training.pdf",
+    "expected_page": 66
+  },
+  {
+    "id": "g017",
+    "question": "What are the key water management practices in intensive aquaculture farms?",
+    "category": "grounded",
+    "expected_source": "fao_sustainable_aquaculture_training.pdf",
+    "expected_page": 72
+  },
+  {
+    "id": "g018",
+    "question": "What are some signs of ineffective governance in aquaculture?",
+    "category": "grounded",
+    "expected_source": "fao_sustainable_aquaculture_training.pdf",
+    "expected_page": 156
+  },
+  {
+    "id": "g019",
+    "question": "What are the key parts that should be included in an aquaculture business plan?",
+    "category": "grounded",
+    "expected_source": "fao_sustainable_aquaculture_training.pdf",
+    "expected_page": 184
+  },
+  {
+    "id": "g020",
+    "question": "What do I need to start an aquaculture business?",
+    "category": "grounded",
+    "expected_source": "fao_sustainable_aquaculture_training.pdf",
+    "expected_page": 9
+  },
+  {
+    "id": "g021",
+    "question": "What are the major feed ingredients that can be used in tilapia feed production in sub-Saharan Africa?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_feed_management_africa.pdf",
+    "expected_page": 17
+  },
+  {
+    "id": "g022",
+    "question": "What are the common practices for tilapia farming in small-scale, low input environments in sub-Saharan Africa?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_feed_management_africa.pdf",
+    "expected_page": 6
+  },
+  {
+    "id": "g023",
+    "question": "What are some locally available protein sources that can be used to replace fishmeal in tilapia feed in sub-Saharan Africa?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_feed_management_africa.pdf",
+    "expected_page": 22
+  },
+  {
+    "id": "g024",
+    "question": "What are the export quantities and prices of maize from Ghana and Kenya in 2010?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_feed_management_africa.pdf",
+    "expected_page": 20
+  },
+  {
+    "id": "g025",
+    "question": "What are the main protein and energy sources for farm-made tilapia feeds in smallholder aquaculture?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_feed_management_africa.pdf",
+    "expected_page": 13
+  },
+  {
+    "id": "g026",
+    "question": "What slope should I use for dikes if my soil has less than 20% clay?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_pond_farming_ghana.pdf",
+    "expected_page": 15
+  },
+  {
+    "id": "g027",
+    "question": "How often should I sample my fish to check on their health and growth?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_pond_farming_ghana.pdf",
+    "expected_page": 30
+  },
+  {
+    "id": "g028",
+    "question": "What are some strategies to reduce risks in aquaculture?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_pond_farming_ghana.pdf",
+    "expected_page": 43
+  },
+  {
+    "id": "g029",
+    "question": "What should be the minimum height difference between the drainage canal and the pond bottom for gravity flow?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_pond_farming_ghana.pdf",
+    "expected_page": 19
+  },
+  {
+    "id": "g030",
+    "question": "What are some key elements that contribute to a successful tilapia pond aquaculture business operation?",
+    "category": "grounded",
+    "expected_source": "fao_tilapia_pond_farming_ghana.pdf",
+    "expected_page": 1
+  },
+  {
+    "id": "g031",
+    "question": "How does the chloride content in water affect nitrite toxicity in fish?",
+    "category": "grounded",
+    "expected_source": "fao_water_quality_fish_health.pdf",
+    "expected_page": 20
+  },
+  {
+    "id": "g032",
+    "question": "How does pollution affect the immune response of fish?",
+    "category": "grounded",
+    "expected_source": "fao_water_quality_fish_health.pdf",
+    "expected_page": 55
+  },
+  {
+    "id": "g033",
+    "question": "How can I collect periphyton samples from underwater surfaces for water quality analysis?",
+    "category": "grounded",
+    "expected_source": "fao_water_quality_fish_health.pdf",
+    "expected_page": 44
+  },
+  {
+    "id": "g034",
+    "question": "Which herbicides are less toxic to fish, and what is their toxicity level?",
+    "category": "grounded",
+    "expected_source": "fao_water_quality_fish_health.pdf",
+    "expected_page": 35
+  },
+  {
+    "id": "g035",
+    "question": "What happens to fish when they are exposed to high levels of nitrite in the water?",
+    "category": "grounded",
+    "expected_source": "fao_water_quality_fish_health.pdf",
+    "expected_page": 19
+  },
+  {
+    "id": "u001",
+    "question": "What is the current interest rate policy of Indonesia's central bank?",
+    "category": "unanswerable",
+    "expected_source": null,
+    "expected_page": null
+  },
+  {
+    "id": "u002",
+    "question": "How do I set up a REST API using FastAPI and deploy it on AWS?",
+    "category": "unanswerable",
+    "expected_source": null,
+    "expected_page": null
+  },
+  {
+    "id": "u003",
+    "question": "What are Indonesia's tax filing deadlines for small businesses in 2026?",
+    "category": "unanswerable",
+    "expected_source": null,
+    "expected_page": null
+  },
+  {
+    "id": "u004",
+    "question": "What is the current USD to Indonesian Rupiah exchange rate?",
+    "category": "unanswerable",
+    "expected_source": null,
+    "expected_page": null
+  },
+  {
+    "id": "u005",
+    "question": "How does mangrove forest photosynthesis differ from terrestrial trees?",
+    "category": "unanswerable",
+    "expected_source": null,
+    "expected_page": null
+  },
+  {
+    "id": "u006",
+    "question": "What visa do I need to work as a foreigner in Indonesia?",
+    "category": "unanswerable",
+    "expected_source": null,
+    "expected_page": null
+  },
+  {
+    "id": "u007",
+    "question": "What's the difference between a k-nearest-neighbors and a random forest classifier?",
+    "category": "unanswerable",
+    "expected_source": null,
+    "expected_page": null
+  },
+  {
+    "id": "u008",
+    "question": "What are the safety regulations for offshore oil drilling in the Java Sea?",
+    "category": "unanswerable",
+    "expected_source": null,
+    "expected_page": null
+  }
+]

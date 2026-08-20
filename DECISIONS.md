@@ -54,6 +54,49 @@ rather than relying on a larger model to be less prone to hallucination. Whether
 gpt-4o-mini's faithfulness/hallucination rate is good enough is exactly what Week
 2's LLM-as-judge evaluation will measure and report on.
 
+## Week 2 finding: chunk-size tuning is a retrieval-vs-faithfulness trade-off, not a free win
+Built a gold set of 35 grounded + 8 deliberately out-of-corpus questions
+(`eval/gold_set.json`; grounded questions generated per-page then hand-checked
+against a substantiveness filter, so ground truth is (source, page) rather than
+a specific chunk -- keeps the gold set valid across different chunking
+strategies) and compared the production config (700 chars/100 overlap, k=5)
+against a naive baseline (1500 chars/0 overlap, k=3). Full results in
+`eval/results/`.
+
+| Metric | Baseline (untuned) | Tuned (production) |
+|---|---|---|
+| Recall@k | 88.6% | 91.4% |
+| MRR | 0.75 | 0.79 |
+| Mean faithfulness | 99.3% | 95.2% |
+| Hallucination rate | 0.7% | 4.8% |
+| Mean answer relevance (1-5) | 4.97 | 4.82 |
+| Abstention accuracy (unanswerable) | 100% | 100% |
+
+The naive assumption going in was "smaller chunks + more overlap + deeper k
+= better on every metric." That's only half true: smaller chunks *did* improve
+retrieval (higher recall@k and MRR -- finer-grained chunks match narrow
+questions more precisely), but faithfulness got slightly *worse*. Manually
+inspecting the tuned run's low-faithfulness cases (`eval/results/tuned_results.json`,
+ids g024/g029) showed real hallucinations, not judge noise -- e.g. a fabricated
+"30 cm minimum height difference" figure that appears nowhere in the retrieved
+chunks, and fabricated Kenya maize export numbers when the actual page
+containing that table wasn't among the 5 retrieved chunks (retrieval returned
+multiple fragments of the *same* page instead of reaching the right one).
+Likely mechanism: smaller chunks packed into the same k budget cover less total
+context, so on multi-fact questions the model sometimes fills a gap with a
+plausible-sounding number instead of citing only what's there, and duplicate
+same-page fragments waste retrieval slots that could have surfaced the actually
+relevant page.
+
+**Decision:** kept the tuned config (700/100, k=5) as production -- recall
+matters more for a farmer-facing assistant (an answer it can't find is a
+guaranteed failure; an answer with a shaky supporting number the citation trail
+still exposes for a human to check), and 95.2% faithfulness / 4.8% hallucination
+is still a reasonable baseline. Flagged, not fixed: a reranker (retrieve wider,
+rerank down to a smaller, more page-diverse k) or deduplicating same-page
+chunks before generation are the natural next experiments -- listed as Week 3+
+follow-ups rather than pursued now, to avoid an open-ended tuning loop.
+
 ## Rebuild-on-ingest, not incremental upsert
 `src/ingest.py` clears the existing Chroma collection and re-embeds everything on
 each run. Corpus is small (7 PDFs) and changes infrequently at this stage, so

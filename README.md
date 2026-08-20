@@ -12,9 +12,10 @@ Indonesia is the world's second-largest aquaculture producer (FAO, *State of
 World Fisheries and Aquaculture 2026*), so this targets a real, large domain —
 not a toy dataset.
 
-> **Status: Week 1 of 4.** Baseline ingestion + retrieval + generation pipeline
-> is working locally. Evaluation harness, API, UI, containerization, CI, and
-> deployment are in progress — see [Roadmap](#roadmap).
+> **Status: Week 2 of 4.** Ingestion, retrieval, generation, and a from-scratch
+> evaluation harness (retrieval metrics + LLM-as-judge faithfulness) are
+> working locally, with real before/after tuning numbers below. API, UI,
+> containerization, CI, and deployment are next — see [Roadmap](#roadmap).
 
 ## Architecture
 
@@ -105,17 +106,48 @@ ranges are as follows:
 I don't have enough information in my sources to answer that.
 ```
 
+## Evaluation
+
+A 43-question gold set (35 grounded — sampled from real corpus pages, one
+LLM-generated question per page, ground-truthed to that page; 8 deliberately
+out-of-corpus) is scored against two retrieval configurations to answer "did
+tuning actually help?" — not just asserted. See
+[eval/results/report.md](eval/results/report.md) and
+[DECISIONS.md](DECISIONS.md#week-2-finding-chunk-size-tuning-is-a-retrieval-vs-faithfulness-trade-off-not-a-free-win)
+for the full write-up (including why faithfulness *dropped* slightly under the
+"better" config — a real, honestly-reported trade-off, not a straight win).
+
+| Metric | Baseline (untuned) | Tuned (production) |
+|---|---|---|
+| Chunk size / overlap | 1500 / 0 | 700 / 100 |
+| Retrieval k | 3 | 5 |
+| Recall@k | 88.6% | 91.4% |
+| MRR | 0.75 | 0.79 |
+| Mean faithfulness (LLM-as-judge, atomic claims) | 99.3% | 95.2% |
+| Hallucination rate | 0.7% | 4.8% |
+| Mean answer relevance (1–5) | 4.97 | 4.82 |
+| Abstention accuracy (unanswerable questions) | 100% | 100% |
+
+```bash
+python eval/generate_gold_set.py     # (re)build eval/gold_set.json
+python eval/build_baseline_index.py  # build the untuned comparison index
+python eval/run_eval.py              # score both variants, write eval/results/report.md
+```
+
 ## Roadmap
 
 - [x] **Week 1** — real corpus, ingestion pipeline, baseline retrieve→generate with citations
-- [ ] **Week 2** — hand-built gold Q&A set; retrieval metrics (recall@k, MRR); RAGAS/DeepEval + custom LLM-as-judge faithfulness verifier; before/after metrics table
+- [x] **Week 2** — hand-built gold Q&A set; retrieval metrics (recall@k, MRR); custom LLM-as-judge faithfulness verifier; before/after metrics table
 - [ ] **Week 3** — FastAPI service, claim-level grounding/explainability view, Docker, GitHub Actions CI eval gate, Hugging Face Spaces deploy
 - [ ] **Week 4** — polish, optional agentic grader step, architecture diagram, demo video, blog post
 
-## Known limitations (Week 1)
+## Known limitations
 
 - Corpus is English-only; the framed problem (Indonesian smallholder farmers)
   implies Bahasa Indonesia sources should be added in a later iteration.
-- No evaluation numbers yet — faithfulness/hallucination rate and retrieval
-  quality are unmeasured until Week 2.
+- Faithfulness dips slightly (95.2%, 4.8% hallucination rate) under the tuned
+  retrieval config — root-caused in DECISIONS.md; a reranker or same-page-chunk
+  deduplication are the flagged next experiments, not yet built.
+- Judge model is gpt-4o-mini, the same model family as generation — a stronger
+  or different-provider judge would reduce self-consistency bias risk.
 - No live demo yet — local CLI only until Week 3's deployment.
