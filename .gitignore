@@ -1,0 +1,10 @@
+.env
+data/raw/*.pdf
+__pycache__/
+*.pyc
+.venv/
+venv/
+vectorstore/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
