@@ -12,10 +12,11 @@ Indonesia is the world's second-largest aquaculture producer (FAO, *State of
 World Fisheries and Aquaculture 2026*), so this targets a real, large domain —
 not a toy dataset.
 
-> **Status: Week 2 of 4.** Ingestion, retrieval, generation, and a from-scratch
-> evaluation harness (retrieval metrics + LLM-as-judge faithfulness) are
-> working locally, with real before/after tuning numbers below. API, UI,
-> containerization, CI, and deployment are next — see [Roadmap](#roadmap).
+> **Status: Week 3 of 4.** Ingestion, retrieval, generation, an evaluation
+> harness with real before/after tuning numbers, a FastAPI service with a
+> claim-level explainability endpoint, a Streamlit demo UI, Docker packaging,
+> and a CI eval gate are all working. Public deployment (Hugging Face Spaces)
+> and the polish pass are next — see [Roadmap](#roadmap).
 
 ## Architecture
 
@@ -35,11 +36,20 @@ data/raw/*.pdf
   retrieved chunks + metadata (source file, page)
       │  ChatOpenAI (gpt-4o-mini), citation + abstention system prompt
       ▼
-   cited answer
+   cited answer  ──────────────►  FastAPI /query (api/main.py)
+      │                                 │  optional ?explain=true
+      │                                 ▼
+      │                     LLM-as-judge claim-by-claim grounding (src/grounding.py)
+      ▼
+  Streamlit UI (ui/app.py) ── calls the pipeline in-process, shown side-by-side
+                               with sources + the explainability view
 ```
 
-See [DECISIONS.md](DECISIONS.md) for why Chroma over pgvector, LangChain over
-LlamaIndex, chunking/model choices, and a Windows-specific dependency note.
+Both `api/` and `ui/` run from one Docker image (`docker/Dockerfile` +
+`docker/entrypoint.sh`) — FastAPI on :8000, Streamlit on :7860 (the public
+port). See [DECISIONS.md](DECISIONS.md) for why Chroma over pgvector,
+LangChain over LlamaIndex, chunking/model choices, the single-container
+API+UI layout, and a Windows-specific dependency note.
 
 ## Corpus
 
@@ -134,11 +144,42 @@ python eval/build_baseline_index.py  # build the untuned comparison index
 python eval/run_eval.py              # score both variants, write eval/results/report.md
 ```
 
+## Running the service
+
+```bash
+# FastAPI (health, version, and /query with optional claim-level explainability)
+cd api && uvicorn main:app --reload --port 8000
+# -> POST /query {"question": "...", "explain": true}
+
+# Streamlit demo UI (calls the pipeline directly)
+streamlit run ui/app.py
+```
+
+**Docker** (bakes in the pre-built `vectorstore/` — run `python src/ingest.py`
+first):
+```bash
+docker build -f docker/Dockerfile -t groundedrag .
+docker run -p 7860:7860 -p 8000:8000 --env-file .env groundedrag
+# -> UI at http://localhost:7860, API at http://localhost:8000
+```
+
+**CI eval gate**: `.github/workflows/eval-gate.yml` runs `eval/ci_gate.py` on
+every push/PR touching `src/` or `eval/` — fails the build if recall@k, mean
+faithfulness, or unanswerable-abstention-accuracy on the gold set drop below
+threshold. Needs an `OPENAI_API_KEY` repository secret configured on GitHub.
+
+**Deploy to Hugging Face Spaces** (Docker SDK):
+```bash
+pip install huggingface_hub
+HF_TOKEN=hf_... HF_SPACE_ID=yourusername/groundedrag python docker/deploy_to_hf.py
+# then add OPENAI_API_KEY as a Space secret (Settings -> Repository secrets)
+```
+
 ## Roadmap
 
 - [x] **Week 1** — real corpus, ingestion pipeline, baseline retrieve→generate with citations
 - [x] **Week 2** — hand-built gold Q&A set; retrieval metrics (recall@k, MRR); custom LLM-as-judge faithfulness verifier; before/after metrics table
-- [ ] **Week 3** — FastAPI service, claim-level grounding/explainability view, Docker, GitHub Actions CI eval gate, Hugging Face Spaces deploy
+- [x] **Week 3** — FastAPI service with claim-level explainability endpoint, Streamlit demo UI, Docker packaging, GitHub Actions CI eval gate, Hugging Face Spaces deploy script
 - [ ] **Week 4** — polish, optional agentic grader step, architecture diagram, demo video, blog post
 
 ## Known limitations
@@ -150,4 +191,10 @@ python eval/run_eval.py              # score both variants, write eval/results/r
   deduplication are the flagged next experiments, not yet built.
 - Judge model is gpt-4o-mini, the same model family as generation — a stronger
   or different-provider judge would reduce self-consistency bias risk.
-- No live demo yet — local CLI only until Week 3's deployment.
+- Docker image build itself hasn't been tested locally (no Docker installed in
+  the dev environment) — the FastAPI and Streamlit code paths it runs were
+  verified directly with `uvicorn`/`streamlit run` against the same source
+  files, but the actual `docker build` should be smoke-tested before relying
+  on it for the live demo.
+- Not yet deployed publicly — `docker/deploy_to_hf.py` is written and ready,
+  pending a Hugging Face account/token.

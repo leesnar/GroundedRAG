@@ -57,9 +57,9 @@ def format_context(docs):
     return "\n\n".join(lines)
 
 
-def generate_answer(question: str, docs, llm=None):
+def generate(question: str, docs, llm=None):
     """Pure retrieve->generate step (no printing): given already-retrieved
-    docs, produce the cited answer text. Reused by the CLI and by eval/."""
+    docs, produce the raw AIMessage response (content + usage metadata)."""
     llm = llm or ChatOpenAI(
         model=config.GENERATION_MODEL, api_key=config.OPENAI_API_KEY, temperature=0
     )
@@ -68,8 +68,13 @@ def generate_answer(question: str, docs, llm=None):
         ("system", SYSTEM_PROMPT.format(context=context)),
         ("human", question),
     ]
-    response = llm.invoke(messages)
-    return response.content
+    return llm.invoke(messages)
+
+
+def generate_answer(question: str, docs, llm=None):
+    """Convenience wrapper returning just the answer text -- used by the CLI
+    and by eval/, which don't need token usage."""
+    return generate(question, docs, llm=llm).content
 
 
 def answer(question: str, k: int = config.RETRIEVAL_K, show_chunks: bool = True):

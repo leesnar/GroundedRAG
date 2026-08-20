@@ -18,9 +18,9 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 import query  # noqa: E402
+from grounding import judge_answer, faithfulness_score  # noqa: E402
 from eval_config import VARIANTS, GOLD_SET_PATH, RESULTS_DIR  # noqa: E402
 from metrics import hit_at_k, reciprocal_rank  # noqa: E402
-from judge import judge_answer, faithfulness_score  # noqa: E402
 
 ABSTAIN_PHRASE = "don't have enough information"
 

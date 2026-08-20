@@ -97,6 +97,52 @@ rerank down to a smaller, more page-diverse k) or deduplicating same-page
 chunks before generation are the natural next experiments -- listed as Week 3+
 follow-ups rather than pursued now, to avoid an open-ended tuning loop.
 
+## Week 3: single container running both FastAPI and Streamlit
+The tech stack calls for both an API (to signal API-building skill directly)
+and a UI (to play to a frontend/UX strength, and because a bare API isn't a
+demo a non-technical reviewer can click through). Rather than deploying two
+separate services, one Docker image runs FastAPI on :8000 (background process,
+internal/programmatic use) and Streamlit on :7860 (foreground, HF Spaces'
+default Docker SDK port and the one actually exposed) via `docker/entrypoint.sh`.
+The Streamlit UI calls the RAG pipeline directly in-process rather than over
+HTTP to the FastAPI service -- simpler for a single-container demo, at the cost
+of some duplicated retrieve/generate wiring between `api/main.py` and
+`ui/app.py` (both call the same `src/query.py` and `src/grounding.py`
+functions, so the duplication is thin: request/response shaping only).
+
+## Docker image bakes in a pre-built vectorstore, doesn't re-embed at boot
+`docker/Dockerfile` does `COPY vectorstore/ ./vectorstore/` and expects
+`python src/ingest.py` to have been run locally first, rather than running
+ingestion inside the container at build or boot time. Re-embedding on every
+container start would mean every cold start costs OpenAI API calls and boot
+latency, and would require the raw FAO PDFs (92MB, not committed) to be
+fetched into the image. Baking in the ~43MB pre-built index keeps the image
+self-contained and boots instantly; the tradeoff is that updating the corpus
+means rebuilding and redeploying the image rather than just restarting it.
+
+## CI eval gate scores only the production config, not the full baseline comparison
+`eval/run_eval.py` (the baseline-vs-tuned comparison used for the Week 2
+write-up) runs two full embedding passes and ~2x the generation/judge calls --
+appropriate for a one-time tuning decision, wasteful as a per-commit check.
+`.github/workflows/eval-gate.yml` instead runs `eval/ci_gate.py`, which scores
+only the production config against the gold set and fails the build if
+recall@k, mean faithfulness, or unanswerable-abstention-accuracy drop below
+fixed thresholds (set a bit under the measured Week 2 numbers so normal
+variance doesn't flake the build). Needs an `OPENAI_API_KEY` repository secret
+to actually run on GitHub -- documented in the README, not yet configured as
+of this write-up since the repo hasn't been pushed to GitHub yet.
+
+## Hugging Face Spaces deploy: flat upload via huggingface_hub, not a git remote
+`docker/deploy_to_hf.py` uses `huggingface_hub`'s `HfApi.upload_folder` to push
+a curated subset of files (Dockerfile, entrypoint, src/api/ui code, the
+pre-built vectorstore, a Space-specific README with the required HF frontmatter)
+to a Space repo, rather than adding the Space as a second git remote and
+pushing the whole dev repo. Keeps the Space repo free of eval results, gold
+sets, dev tooling, and git history it doesn't need, and avoids README
+conflicts (the Space's README needs YAML frontmatter `sdk`/`app_port`/etc. that
+would look out of place at the top of the main GitHub README).
+`docker/space_readme.md` is that Space-specific README template.
+
 ## Rebuild-on-ingest, not incremental upsert
 `src/ingest.py` clears the existing Chroma collection and re-embeds everything on
 each run. Corpus is small (7 PDFs) and changes infrequently at this stage, so

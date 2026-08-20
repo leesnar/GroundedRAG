@@ -1,0 +1,38 @@
+name: Eval Gate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "eval/**"
+      - "requirements.txt"
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch corpus
+        run: python data/fetch_corpus.py
+
+      - name: Build production index
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python src/ingest.py
+
+      - name: Run eval gate
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python eval/ci_gate.py

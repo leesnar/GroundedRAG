@@ -15,8 +15,6 @@ import config  # noqa: E402
 RESULTS_DIR = Path(__file__).resolve().parent / "results"
 GOLD_SET_PATH = Path(__file__).resolve().parent / "gold_set.json"
 
-JUDGE_MODEL = config.GENERATION_MODEL  # gpt-4o-mini; see DECISIONS.md for the tradeoff
-
 VARIANTS = {
     "baseline": {
         "label": "Baseline (untuned)",

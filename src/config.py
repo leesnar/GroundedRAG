@@ -14,6 +14,7 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 EMBEDDING_MODEL = "text-embedding-3-small"
 GENERATION_MODEL = "gpt-4o-mini"
+JUDGE_MODEL = "gpt-4o-mini"  # see DECISIONS.md for the same-model-family tradeoff
 
 CHUNK_SIZE = 700
 CHUNK_OVERLAP = 100

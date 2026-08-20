@@ -1,21 +1,13 @@
-"""LLM-as-judge: atomic-claim faithfulness verdicts + answer relevance.
-
-Only called on answers that actually attempted to answer (not on abstentions --
-"did it correctly refuse" is scored separately and deterministically in
-run_eval.py, since it doesn't need an LLM to check for a fixed refusal phrase).
-"""
+"""Claim-level grounding: decompose an answer into atomic claims and verdict
+each one against the retrieved context. Shared by eval/run_eval.py (scoring
+against the gold set) and api/main.py (the runtime explainability view)."""
 
 from typing import List, Literal
 
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 
-from eval_config import JUDGE_MODEL
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
-import config  # noqa: E402
+import config
 
 
 class ClaimVerdict(BaseModel):
@@ -56,7 +48,7 @@ def get_judge():
     global _judge_llm
     if _judge_llm is None:
         _judge_llm = ChatOpenAI(
-            model=JUDGE_MODEL, api_key=config.OPENAI_API_KEY, temperature=0
+            model=config.JUDGE_MODEL, api_key=config.OPENAI_API_KEY, temperature=0
         ).with_structured_output(JudgeResult)
     return _judge_llm
 
@@ -74,7 +66,7 @@ def judge_answer(question: str, context: str, answer_text: str) -> JudgeResult:
     )
 
 
-def faithfulness_score(result: JudgeResult) -> float:
+def faithfulness_score(result: JudgeResult):
     if not result.claims:
         return None
     supported = sum(1 for c in result.claims if c.verdict == "supported")

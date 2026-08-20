@@ -9,3 +9,6 @@ pypdf>=5.0
 requests>=2.31
 python-dotenv>=1.0
 tiktoken>=0.8
+fastapi>=0.115
+uvicorn[standard]>=0.32
+streamlit>=1.40
