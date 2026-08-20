@@ -1,5 +1,7 @@
 # GroundedRAG — Aquaculture Advisory Assistant
 
+[GitHub](https://github.com/leesnar/GroundedRAG) · Live demo: not yet deployed (see [Roadmap](#roadmap))
+
 Smallholder fish and shrimp farmers need reliable, citation-grounded answers to
 husbandry, water-quality, disease, and feed questions — a wrong or hallucinated
 answer can kill a pond. GroundedRAG is a retrieval-augmented assistant that

@@ -40,9 +40,9 @@ with st.sidebar:
     st.subheader("About")
     st.write(
         "Built as a portfolio project demonstrating retrieval-augmented "
-        "generation with rigorous evaluation — see the GitHub repo (linked from "
-        "this Space's README) for the eval harness, before/after tuning "
-        "numbers, and design decisions."
+        "generation with rigorous evaluation — see the "
+        "[GitHub repo](https://github.com/leesnar/GroundedRAG) for the eval "
+        "harness, before/after tuning numbers, and design decisions."
     )
     k = st.slider("Chunks retrieved (k)", min_value=1, max_value=10, value=config.RETRIEVAL_K)
     show_explain = st.checkbox("Show claim-level grounding (explainability)", value=True)
